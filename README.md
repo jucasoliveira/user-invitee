@@ -68,7 +68,25 @@ var port = normalizePort(process.env.PORT || '3000');
 * User list.
   * After clicking on 'See List', the page should render the table:
   * ![tablelist](/public/images/tablelist.png)
-  
+
+## Distance calculation
+
+To calculate the distance between the userlist and the fixed point, was used [Haversine Formula](https://en.wikipedia.org/wiki/Haversine_formula) .
+This formula is calculated on `./modules/calcDistance`:
+
+```javascript
+let R = radius;
+    let φ1 = this.lat.toRadians(),  λ1 = this.lon.toRadians();
+    let φ2 = point.lat.toRadians(), λ2 = point.lon.toRadians();
+    let Δφ = φ2 - φ1;
+    let Δλ = λ2 - λ1;
+
+    let a = Math.sin(Δφ/2) * Math.sin(Δφ/2)
+        + Math.cos(φ1) * Math.cos(φ2)
+        * Math.sin(Δλ/2) * Math.sin(Δλ/2);
+    let c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+    let d = R * c;
+```
 ##### Testing
 
 ```bash
