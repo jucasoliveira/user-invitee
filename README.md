@@ -93,3 +93,5 @@ let R = radius;
 npm test
 ```
 It will run tests against `app-test.spec.js` file using Mocha
+
+![coverage](/public/images/coverage.png)
