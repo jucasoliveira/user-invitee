@@ -15,6 +15,38 @@ git clone https://github.com/jucasoliveira/user-invitee.git && cd user-invitee
 npm install
 ```
 
+The project structure should appears :
+
+```
+/bin
+    www
+/modules
+    calcDistante.js
+/node_modules
+/public
+    /images
+    /javascripts
+    /stylesheets
+    faviicon.ico
+/routes
+    index.js
+    userlist.js
+/userlistJson
+    userListJson.json
+/views
+    error.hbs
+    index.hbs
+    layout.hbs
+    userslist.hbs
+.gitignore
+apps.js
+app-test.spec.js
+email-inviter.iml
+package.json
+package-lock.json
+README.md
+```
+
 ## To run application
 
 ```bash
@@ -24,6 +56,11 @@ Will open running the application. To see it go to your browser at
 ```html
 http://localhost:3000/
 ```
+To change your localhost port, you must change on bin/www, line 15 or inserting env file with the port you want
+```javascript
+var port = normalizePort(process.env.PORT || '3000');
+``` 
+
 * First Page.
   * The initial page should look like:
   * ![frontpage](/public/images/frontpage.png)
