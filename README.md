@@ -26,7 +26,7 @@ http://localhost:3000/
 ```
 * First Page.
   * The initial page should look like:
-  * ![frontpage](/public/images/frontpage.png)
+  * ![frontpage](/public/images/frontpage.png | width=100)
 ##### Testing
 
 ```bash
