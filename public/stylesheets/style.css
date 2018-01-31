@@ -1,0 +1,73 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.loader-wrapper {
+  position: fixed;
+  top:150px;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  /*background-color: red;*/
+}
+
+.loader {
+  display: block;
+  position: relative;
+  left: 45%;
+  top: 80%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #000000;
+  -webkit-animation: spin 1.5s infinite; /* Chrome, Opera 15+, Safari 5+ */
+  animation: spin 1.5s infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+.loader:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #e34c3c;
+
+  -webkit-animation: spin 1.5s infinite; /* Chrome, Opera 15+, Safari 5+ */
+  animation: spin 1.5s infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+.loader:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #8c8786;
+
+  -webkit-animation: spin 1.5s infinite; /* Chrome, Opera 15+, Safari 5+ */
+  animation: spin 1.5s infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+
+
+
+@keyframes spin {
+  from {
+    transform:rotate(0deg);
+  }
+  to {
+    transform:rotate(360deg);
+  }
+}
