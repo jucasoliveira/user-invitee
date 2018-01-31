@@ -24,7 +24,9 @@ Will open running the application. To see it go to your browser at
 ```html
 http://localhost:3000/
 ```
-
+* First Page.
+  * The initial page should look like:
+  * ![frontpage](/public/images/frontpage.png)
 ##### Testing
 
 ```bash
