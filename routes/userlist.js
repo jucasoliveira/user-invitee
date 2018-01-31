@@ -7,7 +7,7 @@ let CalcDistance = require('../modules/calcDistance');
 let intercomDublinOffice = new CalcDistance(53.339428, -6.257664), getDistance = [], km , d;
 
 
-/* GET home page. */
+/* GET userslist page. */
 router.get('/', function(req, res, next) {
     jsonList.userList.forEach((e)=>{
         let userLocation = new CalcDistance(e.latitude, e.longitude);
