@@ -8,7 +8,7 @@ with users within 100km from Dublin
 You will need `node.js` and `git` installed on your machine
 
 ```bash
-git clone https://github.com/jucasoliveira/user-invitee.git
+git clone https://github.com/jucasoliveira/user-invitee.git && cd user-invitee
 ```
 
 ```bash
