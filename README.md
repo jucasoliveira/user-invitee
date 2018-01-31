@@ -28,6 +28,10 @@ http://localhost:3000/
   * The initial page should look like:
   * ![frontpage](/public/images/frontpage.png)
   
+* User list.
+  * After clicking on 'See List', the page should render the table:
+  * ![tablelist](/public/images/tablelist.png)
+  
 ##### Testing
 
 ```bash
